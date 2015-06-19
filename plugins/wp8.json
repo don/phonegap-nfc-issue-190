@@ -1,0 +1,39 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"NfcPlugin\"><param name=\"wp-package\" value=\"NfcPlugin\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "Properties/WMAppManifest.xml": {
+                "parents": {
+                    "/Deployment/App/Capabilities": [
+                        {
+                            "xml": "<Capability Name=\"ID_CAP_PROXIMITY\" />",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "{e758c9f0-1662-11e5-a4f9-df8bc1333d61}"
+        },
+        "com.chariotsolutions.nfc.plugin": {
+            "PACKAGE_NAME": "{e758c9f0-1662-11e5-a4f9-df8bc1333d61}"
+        }
+    },
+    "dependent_plugins": {}
+}

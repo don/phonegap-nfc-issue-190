@@ -1,0 +1,59 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"NfcPlugin\"><param name=\"wp-package\" value=\"NfcPlugin\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "package.phone.appxmanifest": {
+                "parents": {
+                    "/Package/Capabilities": [
+                        {
+                            "xml": "<DeviceCapability Name=\"proximity\" />",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "package.windows.appxmanifest": {
+                "parents": {
+                    "/Package/Capabilities": [
+                        {
+                            "xml": "<DeviceCapability Name=\"proximity\" />",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "package.windows80.appxmanifest": {
+                "parents": {
+                    "/Package/Capabilities": [
+                        {
+                            "xml": "<DeviceCapability Name=\"proximity\" />",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "NFCReaderB"
+        },
+        "com.chariotsolutions.nfc.plugin": {
+            "PACKAGE_NAME": "NFCReaderB"
+        }
+    },
+    "dependent_plugins": {}
+}
